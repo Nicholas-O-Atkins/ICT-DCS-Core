@@ -1,10 +1,10 @@
 ﻿namespace WarframeLeftoverAPI.Models
 {
-    public class Item_Material
+    public class Tenno_Task_Material
     {
-        public int Item_ID { get; set; }
+        public int Tenno_Task_ID { get; set; }
         public int Material_ID { get; set; }
-        public Item Item { get; set; }
+        public Tenno_Task Tenno_Task { get; set; }
         public Material Material { get; set; }
     }
 }
