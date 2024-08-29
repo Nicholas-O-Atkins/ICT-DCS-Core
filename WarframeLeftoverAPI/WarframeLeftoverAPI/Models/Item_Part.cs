@@ -4,6 +4,7 @@
     {
         public int Part_ID { get; set; }
         public int Item_ID { get; set; }
+        public int Part_Quantity {get; set; }
         public Part Part { get; set; }
         public Item Item { get; set; }
     }
