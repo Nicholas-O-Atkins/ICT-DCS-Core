@@ -38,111 +38,111 @@ namespace WarframeLeftoverAPI.Data
         {
             // Tenno_Task_Item override
             modelBuilder.Entity<Tenno_Task_Item>()
-                .HasKey(tti => new { tti.Tenno_Task_ID, tti.Item_ID });
+                .HasKey(tti => new { tti.Tenno_Task_Id, tti.Item_Id });
             modelBuilder.Entity<Tenno_Task_Item>()
                 .HasOne(t => t.Tenno_Task)
                 .WithMany(tti => tti.Tenno_Task_Items)
-                .HasForeignKey(t => t.Tenno_Task_ID);
+                .HasForeignKey(t => t.Tenno_Task_Id);
             modelBuilder.Entity<Tenno_Task_Item>()
                 .HasOne(i => i.Item)
                 .WithMany(tti => tti.Tenno_Task_Items)
-                .HasForeignKey(i => i.Item_ID);
+                .HasForeignKey(i => i.Item_Id);
 
             // Tenno_Task_Part Override
             modelBuilder.Entity<Tenno_Task_Part>()
-                .HasKey(ttp => new { ttp.Tenno_Task_ID, ttp.Part_ID });
+                .HasKey(ttp => new { ttp.Tenno_Task_Id, ttp.Part_Id });
             modelBuilder.Entity<Tenno_Task_Part>()
                 .HasOne(t => t.Tenno_Task)
                 .WithMany(ttp => ttp.Tenno_Task_Parts)
-                .HasForeignKey(t => t.Tenno_Task_ID);
+                .HasForeignKey(t => t.Tenno_Task_Id);
             modelBuilder.Entity<Tenno_Task_Part>()
                 .HasOne(p => p.Part)
                 .WithMany(ttp => ttp.Tenno_Task_Parts)
-                .HasForeignKey(p => p.Part_ID);
+                .HasForeignKey(p => p.Part_Id);
 
             // Tenno_Task_Material Override
             modelBuilder.Entity<Tenno_Task_Material>()
-                .HasKey(ttm => new { ttm.Tenno_Task_ID, ttm.Material_ID });
+                .HasKey(ttm => new { ttm.Tenno_Task_Id, ttm.Material_Id });
             modelBuilder.Entity<Tenno_Task_Material>()
                 .HasOne(t => t.Tenno_Task)
                 .WithMany(ttm => ttm.Tenno_Task_Materials)
-                .HasForeignKey(t => t.Tenno_Task_ID);
+                .HasForeignKey(t => t.Tenno_Task_Id);
             modelBuilder.Entity<Tenno_Task_Material>()
                 .HasOne(m => m.Material)
                 .WithMany(ttm => ttm.Tenno_Task_Materials)
-                .HasForeignKey(m => m.Material_ID);
+                .HasForeignKey(m => m.Material_Id);
 
             // Item_Part Override
             modelBuilder.Entity<Item_Part>()
-                .HasKey(ip => new { ip.Item_ID, ip.Part_ID });
+                .HasKey(ip => new { ip.Item_Id, ip.Part_Id });
             modelBuilder.Entity<Item_Part>()
                 .HasOne(i => i.Item)
                 .WithMany(ip => ip.Item_Parts)
-                .HasForeignKey(i => i.Item_ID);
+                .HasForeignKey(i => i.Item_Id);
             modelBuilder.Entity<Item_Part>()
                 .HasOne(p => p.Part)
                 .WithMany(ip => ip.Item_Parts)
-                .HasForeignKey(p => p.Part_ID);
+                .HasForeignKey(p => p.Part_Id);
 
             // Item_Material Override
             modelBuilder.Entity<Item_Material>()
-                .HasKey(im => new { im.Item_ID, im.Material_ID });
+                .HasKey(im => new { im.Item_Id, im.Material_Id });
             modelBuilder.Entity<Item_Material>()
                 .HasOne(i => i.Item)
                 .WithMany(im => im.Item_Materials)
-                .HasForeignKey(i => i.Item_ID);
+                .HasForeignKey(i => i.Item_Id);
             modelBuilder.Entity<Item_Material>()
                 .HasOne(m => m.Material)
                 .WithMany(im => im.Item_Materials)
-                .HasForeignKey(m => m.Material_ID);
+                .HasForeignKey(m => m.Material_Id);
 
             // Item_Location Override
             modelBuilder.Entity<Item_Location>()
-                .HasKey(il => new { il.Item_ID, il.Location_ID });
+                .HasKey(il => new { il.Item_Id, il.Location_Id });
             modelBuilder.Entity<Item_Location>()
                 .HasOne(i => i.Item)
                 .WithMany(il => il.Item_Locations)
-                .HasForeignKey(i => i.Item_ID);
+                .HasForeignKey(i => i.Item_Id);
             modelBuilder.Entity<Item_Location>()
                 .HasOne(l => l.Location)
                 .WithMany(il => il.Item_Locations)
-                .HasForeignKey(l => l.Location_ID);
+                .HasForeignKey(l => l.Location_Id);
 
             // Part_Location Override
             modelBuilder.Entity<Part_Location>()
-                .HasKey(pl => new { pl.Part_ID, pl.Location_ID });
+                .HasKey(pl => new { pl.Part_Id, pl.Location_Id });
             modelBuilder.Entity<Part_Location>()
                 .HasOne(p => p.Part)
                 .WithMany(pl => pl.Part_Locations)
-                .HasForeignKey(p => p.Part_ID);
+                .HasForeignKey(p => p.Part_Id);
             modelBuilder.Entity<Part_Location>()
                 .HasOne(l => l.Location)
                 .WithMany(il => il.Part_Locations)
-                .HasForeignKey(l => l.Location_ID);
+                .HasForeignKey(l => l.Location_Id);
 
             // Part_Material Override
             modelBuilder.Entity<Part_Material>()
-                .HasKey(pm => new { pm.Part_ID, pm.Material_ID });
+                .HasKey(pm => new { pm.Part_Id, pm.Material_Id });
             modelBuilder.Entity<Part_Material>()
                 .HasOne(p => p.Part)
                 .WithMany(pm => pm.Part_Materials)
-                .HasForeignKey(p => p.Part_ID);
+                .HasForeignKey(p => p.Part_Id);
             modelBuilder.Entity<Part_Material>()
                 .HasOne(m => m.Material)
                 .WithMany(pm => pm.Part_Materials)
-                .HasForeignKey(m => m.Material_ID);
+                .HasForeignKey(m => m.Material_Id);
 
             // Material_Location Override
             modelBuilder.Entity<Material_Location>()
-                .HasKey(ml => new { ml.Material_ID, ml.Location_ID });
+                .HasKey(ml => new { ml.Material_Id, ml.Location_Id });
             modelBuilder.Entity<Material_Location>()
                 .HasOne(m => m.Material)
                 .WithMany(ml => ml.Material_Locations)
-                .HasForeignKey(m => m.Material_ID);
+                .HasForeignKey(m => m.Material_Id);
             modelBuilder.Entity<Material_Location>()
                 .HasOne(l => l.Location)
                 .WithMany(ml => ml.Material_Locations)
-                .HasForeignKey(l => l.Location_ID);
+                .HasForeignKey(l => l.Location_Id);
         }
     }
 }

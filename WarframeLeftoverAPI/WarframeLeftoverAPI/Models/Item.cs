@@ -2,7 +2,7 @@
 {
     public class Item
     {
-        public int Item_ID { get; set; }
+        public int Item_Id { get; set; }
         public string Item_Name { get; set; }
         public string Item_Description { get; set;}
         public Item_Type Item_Type { get; set; }

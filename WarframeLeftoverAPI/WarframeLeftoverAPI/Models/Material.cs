@@ -2,7 +2,7 @@
 {
     public class Material
     {
-        public int Material_ID { get; set; }
+        public int Material_Id { get; set; }
         public string Material_Name { get; set;}
         public Material_Type Material_Type { get; set;}
         public string Material_Description { get; set;}
