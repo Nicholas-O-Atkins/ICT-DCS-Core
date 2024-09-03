@@ -2,13 +2,13 @@
 {
     public class Material
     {
-        public int Material_Id { get; set; }
-        public string Material_Name { get; set;}
-        public Material_Type Material_Type { get; set;}
-        public string Material_Description { get; set;}
-        public ICollection<Tenno_Task_Material> Tenno_Task_Materials { get; set;}
-        public ICollection<Material_Location> Material_Locations { get; set; }
-        public ICollection<Part_Material> Part_Materials { get; set; }
-        public ICollection<Item_Material> Item_Materials { get; set; }
+        public int MaterialId { get; set; }
+        public string MaterialName { get; set;}
+        public MaterialType MaterialType { get; set;}
+        public string MaterialDescription { get; set;}
+        public ICollection<TennoTaskMaterial> TennoTaskMaterials { get; set;}
+        public ICollection<MaterialLocation> MaterialLocations { get; set; }
+        public ICollection<PartMaterial> PartMaterials { get; set; }
+        public ICollection<ItemMaterial> ItemMaterials { get; set; }
     }
 }

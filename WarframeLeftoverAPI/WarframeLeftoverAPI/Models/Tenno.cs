@@ -2,9 +2,9 @@
 {
     public class Tenno
     {
-        public int Tenno_Id { get; set; }
+        public int TennoId { get; set; }
         public string Name { get; set; }
-        public Tenno_Rank Tenno_Rank { get; set; }
-        public ICollection<Tenno_Task> Tenno_Tasks { get; set; }
+        public TennoRank TennoRank { get; set; }
+        public ICollection<TennoTask> TennoTasks { get; set; }
     }
 }

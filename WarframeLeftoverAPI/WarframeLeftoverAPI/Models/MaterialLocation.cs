@@ -1,9 +1,9 @@
 ﻿namespace WarframeLeftoverAPI.Models
 {
-    public class Material_Location
+    public class MaterialLocation
     {
-        public int Material_Id { get; set; }
-        public int Location_Id { get; set; }
+        public int MaterialId { get; set; }
+        public int LocationId { get; set; }
         public Material Material { get; set; }
         public Location Location { get; set; }
     }

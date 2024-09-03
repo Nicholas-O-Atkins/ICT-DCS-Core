@@ -1,9 +1,9 @@
 ﻿namespace WarframeLeftoverAPI.Models
 {
-    public class Part_Location
+    public class PartLocation
     {
-        public int Part_Id { get; set; }
-        public int Location_Id { get; set; }
+        public int PartId { get; set; }
+        public int LocationId { get; set; }
         public Part Part { get; set; }
         public Location Location { get; set; }
     }

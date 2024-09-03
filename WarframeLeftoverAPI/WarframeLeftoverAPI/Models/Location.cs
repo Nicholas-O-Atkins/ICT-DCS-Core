@@ -2,10 +2,10 @@
 {
     public class Location
     {
-        public int Location_Id { get; set; }
-        public string Location_Name { get; set;}
-        public ICollection<Item_Location> Item_Locations { get; set; }
-        public ICollection<Part_Location> Part_Locations { get; set; }
-        public ICollection<Material_Location> Material_Locations { get; set; }        
+        public int LocationId { get; set; }
+        public string LocationName { get; set;}
+        public ICollection<ItemLocation> ItemLocations { get; set; }
+        public ICollection<PartLocation> PartLocations { get; set; }
+        public ICollection<MaterialLocation> MaterialLocations { get; set; }        
     }
 }

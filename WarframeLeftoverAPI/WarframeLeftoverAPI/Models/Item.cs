@@ -2,13 +2,13 @@
 {
     public class Item
     {
-        public int Item_Id { get; set; }
-        public string Item_Name { get; set; }
-        public string Item_Description { get; set;}
-        public Item_Type Item_Type { get; set; }
-        public ICollection<Tenno_Task_Item> Tenno_Task_Items { get; set; }
-        public ICollection<Item_Location> Item_Locations { get; set; }
-        public ICollection<Item_Part> Item_Parts { get; set; }
-        public ICollection<Item_Material> Item_Materials { get; set; }
+        public int ItemId  { get; set; }
+        public string ItemName { get; set; }
+        public string ItemDescription { get; set;}
+        public ItemType ItemType { get; set; }
+        public ICollection<TennoTaskItem> TennoTaskItems { get; set; }
+        public ICollection<ItemLocation> ItemLocations { get; set; }
+        public ICollection<ItemPart> ItemParts { get; set; }
+        public ICollection<ItemMaterial> ItemMaterials { get; set; }
     }
 }
